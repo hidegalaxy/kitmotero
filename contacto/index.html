@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | KitMotero</title>
+<meta name="description" content="Escribe a KitMotero.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://kitmotero.es/contacto/">
+<meta property="og:type" content="website"><meta property="og:title" content="Contacto | KitMotero"><meta property="og:description" content="Escribe a KitMotero."><meta property="og:url" content="https://kitmotero.es/contacto/"><meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#12161b">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="../estilos.css?v=f9bae63f">
+<script>document.documentElement.classList.add('js')</script>
+
+
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<p class="borrador">Vista previa: los 4 guantes y sus precios (20/11/2026) son reales; las medidas son simuladas porque la prueba aún no se ha hecho.</p>
+<header class="cab oscuro"><div class="cont">
+<a class="logo" href="../" aria-label="KitMotero, inicio"><span class="a">Kit</span>Motero</a>
+<nav class="nav-ancha" aria-label="Principal"><a href="../pruebas/guantes-moto-invierno/">Guantes</a><a href="../kits/">Kits</a><a href="../pruebas/">Todas las pruebas</a><a href="../guias/guantes-obligatorios-dgt/">Normas DGT</a><a href="../blog/">Blog</a><a href="../metodo/">Cómo medimos</a></nav>
+<details class="menu"><summary aria-label="Abrir menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></summary><ul><li><a href="../pruebas/guantes-moto-invierno/">Guantes</a></li><li><a href="../kits/">Kits</a></li><li><a href="../pruebas/">Todas las pruebas</a></li><li><a href="../guias/guantes-obligatorios-dgt/">Normas DGT</a></li><li><a href="../blog/">Blog</a></li><li><a href="../metodo/">Cómo medimos</a></li></ul></details>
+</div></header>
+<main id="contenido">
+<article><header class="cab-pagina"><div class="cont"><h1>Contacto</h1></div></header>
+<section class="seccion"><div class="cont"><div class="prosa">
+<p>¿Quieres que probemos algo, has visto un error o eres una marca? Escríbenos a <em class="pend">pendiente</em>.</p>
+<p>Las marcas pueden prestarnos producto, pero no ven la prueba antes de publicarla ni deciden el resultado.</p>
+</div></div></section></article>
+</main>
+<footer class="pie"><div class="cont">
+<p class="pie-lema">Equipo probado en Barcelona, en moto, todos los días.</p>
+<nav aria-label="Pie"><a href="../metodo/">Método</a><a href="../aviso-legal/">Aviso legal</a><a href="../privacidad/">Privacidad y cookies</a><a href="../contacto/">Contacto</a></nav>
+<p class="aviso">Algunos enlaces son de afiliado (Amazon y otras tiendas): la web cobra una comisión y tú pagas lo mismo. En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
+</div></footer>
+
+<script>(function(){
+document.querySelectorAll('.lineas').forEach(function(p){var s=JSON.parse(p.dataset.s),fin=+p.dataset.min,lee=p.querySelectorAll('.lee'),cab=p.querySelector('.g-min'),orig=[].map.call(lee,function(b){return b.textContent});
+function nf(v){return v.toLocaleString('es-ES',{minimumFractionDigits:1,maximumFractionDigits:1})+'\u00a0°C'}
+function quita(){p.classList.remove('leyendo');lee.forEach(function(b,k){b.textContent=orig[k]});cab.textContent='minuto '+fin}
+p.querySelectorAll('svg').forEach(function(svg){var d=JSON.parse(svg.dataset.p),raya=svg.querySelector('.cursor line'),pts=svg.querySelectorAll('.cursor circle');
+function pon(e){var r=svg.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*d.w,m=Math.round((x-d.x0)/(d.x1-d.x0)*d.min);m=Math.max(0,Math.min(d.min,m));var px=d.x0+m/d.min*(d.x1-d.x0);raya.setAttribute('x1',px);raya.setAttribute('x2',px);
+s.forEach(function(serie,k){var c=serie[0];serie.forEach(function(q){if(Math.abs(q[0]-m)<Math.abs(c[0]-m))c=q});pts[k].setAttribute('cx',px);pts[k].setAttribute('cy',d.yt+(1-(c[1]-d.lo)/(d.hi-d.lo))*(d.yb-d.yt));lee[k].textContent=m>=fin?orig[k]:nf(c[1])});
+cab.textContent='minuto '+m;p.classList.add('leyendo')}
+svg.addEventListener('pointerdown',pon);svg.addEventListener('pointermove',pon);svg.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse')quita()})});
+document.addEventListener('pointerdown',function(e){if(!p.contains(e.target))quita()})})})()</script>
+</body>
+</html>
