@@ -732,3 +732,13 @@ html:not(.js) .solo-js{ display:none }
 .blog-prueba a:focus-visible{ outline-color:var(--hielo) }
 .blog-kit{ margin-top:var(--s5) }
 .blog-kit .kits{ grid-template-columns:1fr }
+
+/* Todo el kit a la cesta (23/11/2026): un botón ámbar ancho bajo el ticket y otro al final de las fichas. */
+.cesta{ margin-top:var(--s4) }
+.btn-cesta{ display:flex; width:100%; min-height:56px; font-size:17px; gap:var(--s2) }
+.cesta-nota{ margin-top:var(--s2); font-size:14px; line-height:1.45; color:var(--hielo-2) }
+.cesta-fin{ margin-top:var(--s6); padding:var(--s5); border:2px solid var(--tinta); border-radius:var(--r3); background:var(--blanco); max-width:560px }
+.cesta-fin .cesta{ margin-top:0 }
+.cesta-fin .cesta-nota{ color:var(--gris) }
+.cab-kit .ticket + .cesta{ margin-top:var(--s4) }
+@media (min-width:900px){ .cab-kit-lado{ margin-top:var(--s5) } .cab-kit .cab-kit-lado .ticket{ margin-top:0 } }
